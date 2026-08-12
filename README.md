@@ -28,6 +28,33 @@ The quality-control report includes:
 
 The trimming guidance is advisory. The agent never changes the input FASTQ file.
 
+## Quick start from a fresh clone
+
+The core workflow and bundled synthetic sample need Python 3.10 or later and no
+third-party Python packages. On macOS or Linux:
+
+```bash
+git clone https://github.com/ageofthegit/bioinformatics-pipeline-agent.git
+cd bioinformatics-pipeline-agent
+python3 -m venv .venv
+source .venv/bin/activate
+python run.py data/sample.fastq
+```
+
+To use the visual dashboard, install Node.js 22.13 or later and then run:
+
+```bash
+cd dashboard
+npm ci
+cd ..
+python -m bioagent.dashboard_server
+```
+
+The server waits for the interface to start and opens
+`http://localhost:3000/` in the default browser. Press `Ctrl+C` in the terminal
+to stop it. Nextflow, MCP, and public datasets are optional additions documented
+below.
+
 ## Run it
 
 From this folder:
@@ -408,10 +435,9 @@ runs/                   created at runtime; one folder per run
 
 ## Deliberate limits
 
-This version does not call an external LLM and does not use cloud computing or real patient data. The remaining features should be added one at a time in this order:
-
-1. complete the remaining project-owner dataset reviews;
-2. polish the application evidence; and
-3. publish the reviewed repository.
+This version does not call an external LLM and does not use cloud computing or
+real patient data. Remaining work includes completing the project-owner dataset
+reviews, choosing a reuse licence, and deciding whether the learning prototype
+should ever gain a hosted deployment.
 
 See `docs/next-steps-2026-08-10.md` for the complete staged roadmap and acceptance criteria.
