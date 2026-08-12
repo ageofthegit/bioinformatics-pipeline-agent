@@ -319,7 +319,7 @@ def wait_for_frontend(
         if process.poll() is not None:
             raise RuntimeError("Dashboard interface stopped during startup")
         try:
-            with socket.create_connection(("127.0.0.1", 3000), timeout=0.2):
+            with socket.create_connection(("localhost", 3000), timeout=0.2):
                 return
         except OSError:
             time.sleep(0.2)

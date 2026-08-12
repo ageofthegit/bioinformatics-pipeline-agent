@@ -72,6 +72,19 @@ source .venv/bin/activate
 python -m bioagent.dashboard_server
 ```
 
+On macOS, this version explicitly waits for the dashboard and opens it in the
+default browser:
+
+```bash
+cd "/path/to/bioinformatics-pipeline-agent"
+source .venv/bin/activate
+python -m bioagent.dashboard_server &
+DASHBOARD_PID=$!
+until curl -fsS http://localhost:3000/ >/dev/null; do sleep 1; done
+open http://localhost:3000/
+wait "$DASHBOARD_PID"
+```
+
 The browser opens at `http://localhost:3000/`. The dashboard can select only
 the approved local dataset catalog and the Python/Nextflow runners. It starts
 the existing CLI as a child process and enables a decision button only after
