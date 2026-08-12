@@ -15,3 +15,5 @@ dashboard/dist/
 dashboard/.next/
 dashboard/.vinext/
 dashboard/.wrangler/
+docs/workings-*.md
+docs/next-steps-*.md
