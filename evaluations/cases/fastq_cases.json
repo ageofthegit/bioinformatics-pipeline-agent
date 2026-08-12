@@ -1,0 +1,107 @@
+[
+  {
+    "case_id": "high_quality",
+    "valid": true,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nACGT\n+\nIIII\n@read-2\nGGCC\n+\nIIII\n",
+    "expected_measurements": {
+      "read_count": 2,
+      "total_bases": 8,
+      "mean_base_quality": 40.0,
+      "gc_percent": 75.0,
+      "n_percent": 0.0,
+      "shortest_read": 4,
+      "longest_read": 4,
+      "low_quality_percent": 0.0,
+      "read_length_variation_percent": 0.0
+    },
+    "recommendation_contains": [
+      "All reads meet the mean-quality threshold",
+      "No unknown (N) bases were detected",
+      "no trimming is suggested"
+    ]
+  },
+  {
+    "case_id": "low_quality_tail",
+    "valid": true,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nACGT\n+\nI!!!\n",
+    "expected_measurements": {
+      "read_count": 1,
+      "total_bases": 4,
+      "mean_base_quality": 10.0,
+      "gc_percent": 50.0,
+      "n_percent": 0.0,
+      "low_quality_reads": 1,
+      "low_quality_percent": 100.0,
+      "shortest_read": 4,
+      "longest_read": 4
+    },
+    "recommendation_contains": [
+      "Many reads are below the mean-quality threshold",
+      "Review trimming from base position 2",
+      "No reads were modified"
+    ]
+  },
+  {
+    "case_id": "unknown_bases",
+    "valid": true,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nANNT\n+\nIIII\n",
+    "expected_measurements": {
+      "read_count": 1,
+      "total_bases": 4,
+      "mean_base_quality": 40.0,
+      "gc_percent": 0.0,
+      "n_bases": 2,
+      "n_percent": 50.0,
+      "low_quality_percent": 0.0
+    },
+    "recommendation_contains": [
+      "All reads meet the mean-quality threshold",
+      "Unknown bases account for 50%"
+    ]
+  },
+  {
+    "case_id": "variable_lengths",
+    "valid": true,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nACGT\n+\nIIII\n@read-2\nACGTACGT\n+\nIIIIIIII\n",
+    "expected_measurements": {
+      "read_count": 2,
+      "total_bases": 12,
+      "mean_read_length": 6.0,
+      "median_read_length": 6.0,
+      "shortest_read": 4,
+      "longest_read": 8,
+      "read_length_variation_percent": 66.67,
+      "unusual_read_length_variation": true,
+      "gc_percent": 50.0
+    },
+    "recommendation_contains": [
+      "Read lengths vary from 4 to 8 bases",
+      "Review whether this variation is expected"
+    ]
+  },
+  {
+    "case_id": "length_mismatch",
+    "valid": false,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nACGT\n+\nIII\n",
+    "expected_error_contains": "quality characters"
+  },
+  {
+    "case_id": "unexpected_base",
+    "valid": false,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nACGX\n+\nIIII\n",
+    "expected_error_contains": "unexpected DNA base"
+  },
+  {
+    "case_id": "incomplete_record",
+    "valid": false,
+    "quality_threshold": 20,
+    "fastq": "@read-1\nACGT\n+\n",
+    "expected_error_contains": "incomplete"
+  }
+]

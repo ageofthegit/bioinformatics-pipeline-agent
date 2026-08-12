@@ -1,0 +1,28 @@
+{
+  "accession": "DRR002057",
+  "study_accession": "PRJDB2622",
+  "sample_accession": "SAMD00013288",
+  "study_title": "The multiplicity of divergence mechanisms in a single evolving population",
+  "sample_title": "Escherichia coli BW4005",
+  "scientific_name": "Escherichia coli",
+  "taxonomy_id": 562,
+  "data_classification": "public non-human bacterial genomic data",
+  "instrument": "454 GS FLX Titanium",
+  "library_strategy": "WGS",
+  "library_source": "GENOMIC",
+  "library_layout": "SINGLE",
+  "expected_read_count": 128518,
+  "ena_portal_base_count": 73997626,
+  "source_record": "https://www.ebi.ac.uk/ena/browser/view/DRR002057",
+  "study_record": "https://www.ebi.ac.uk/ena/browser/view/PRJDB2622",
+  "usage_policy": "https://www.ebi.ac.uk/ena/browser/about/policies",
+  "usage_summary": "INSDC public records have free and unrestricted access; cite the original submission as good scientific practice.",
+  "compressed_file": {
+    "name": "DRR002057.fastq.gz",
+    "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR002/DRR002057/DRR002057.fastq.gz",
+    "format": "gzip-compressed FASTQ",
+    "bytes": 14215821,
+    "md5": "8745076d647657792cd2cffbbe0a34e2"
+  },
+  "local_fastq": "data/public/DRR002057.fastq"
+}

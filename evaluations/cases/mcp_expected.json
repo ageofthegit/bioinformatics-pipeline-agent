@@ -1,0 +1,12 @@
+{
+  "tool_names": [
+    "validate_fastq",
+    "propose_qc_plan",
+    "request_pipeline_run",
+    "get_run_status",
+    "summarise_qc_result"
+  ],
+  "request_status": "awaiting_human_approval",
+  "execution_started": false,
+  "allowed_input_suffixes": [".fastq", ".fq"]
+}

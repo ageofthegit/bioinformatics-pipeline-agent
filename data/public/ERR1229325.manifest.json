@@ -1,0 +1,31 @@
+{
+  "accession": "ERR1229325",
+  "experiment_accession": "ERX1301345",
+  "study_accession": "PRJEB12530",
+  "sample_accession": "SAMEA3857051",
+  "study_title": "RAD-seq reduced-genome sequencing of 200 S. cerevisiae strains for phylogenetic analysis",
+  "sample_title": "RAD-seq reduced-genome sequencing of yeast strain for phylogenetic analysis",
+  "scientific_name": "Saccharomyces cerevisiae",
+  "taxonomy_id": 4932,
+  "data_classification": "public non-human yeast genomic data",
+  "instrument": "Illumina Genome Analyzer II",
+  "library_strategy": "WGS",
+  "library_source": "GENOMIC",
+  "library_selection": "Reduced Representation",
+  "library_layout": "SINGLE",
+  "expected_read_count": 122511,
+  "ena_portal_base_count": 4410396,
+  "first_public": "2016-02-26",
+  "source_record": "https://www.ebi.ac.uk/ena/browser/view/ERR1229325",
+  "study_record": "https://www.ebi.ac.uk/ena/browser/view/PRJEB12530",
+  "usage_policy": "https://www.ebi.ac.uk/ena/browser/about/policies",
+  "usage_summary": "INSDC public records have free and unrestricted access; cite the original submission as good scientific practice.",
+  "compressed_file": {
+    "name": "ERR1229325.fastq.gz",
+    "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR122/005/ERR1229325/ERR1229325.fastq.gz",
+    "format": "gzip-compressed FASTQ",
+    "bytes": 3000757,
+    "md5": "cb62373776eaa45fa49a744ac5cd4ae7"
+  },
+  "local_fastq": "data/public/ERR1229325.fastq"
+}

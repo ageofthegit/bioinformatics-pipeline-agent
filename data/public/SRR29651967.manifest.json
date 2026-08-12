@@ -1,0 +1,32 @@
+{
+  "accession": "SRR29651967",
+  "experiment_accession": "SRX25156112",
+  "study_accession": "PRJNA1129847",
+  "sample_accession": "SAMN42175734",
+  "study_title": "16s sequencing rhizosphere",
+  "sample_title": "Microbe sample from Pseudomonas fluorescens",
+  "scientific_name": "Pseudomonas fluorescens",
+  "taxonomy_id": 294,
+  "data_classification": "public non-human environmental bacterial genomic data",
+  "instrument": "Illumina MiSeq",
+  "library_strategy": "WGS",
+  "library_source": "GENOMIC",
+  "library_selection": "PCR",
+  "library_layout": "SINGLE",
+  "metadata_note": "ENA records library strategy WGS while the study and experiment titles describe 16S sequencing; both facts are retained.",
+  "expected_read_count": 53841,
+  "ena_portal_base_count": 22299091,
+  "first_public": "2024-12-01",
+  "source_record": "https://www.ebi.ac.uk/ena/browser/view/SRR29651967",
+  "study_record": "https://www.ebi.ac.uk/ena/browser/view/PRJNA1129847",
+  "usage_policy": "https://www.ebi.ac.uk/ena/browser/about/policies",
+  "usage_summary": "INSDC public records have free and unrestricted access; cite the original submission as good scientific practice.",
+  "compressed_file": {
+    "name": "SRR29651967.fastq.gz",
+    "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR296/067/SRR29651967/SRR29651967.fastq.gz",
+    "format": "gzip-compressed FASTQ",
+    "bytes": 4404739,
+    "md5": "58d2ea4c4b88363224785382c857e220"
+  },
+  "local_fastq": "data/public/SRR29651967.fastq"
+}

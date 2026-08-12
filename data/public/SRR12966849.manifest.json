@@ -1,0 +1,31 @@
+{
+  "accession": "SRR12966849",
+  "experiment_accession": "SRX9419430",
+  "study_accession": "PRJNA673881",
+  "sample_accession": "SAMN16627557",
+  "study_title": "High-efficiency CRISPR-Cas9 Delivery by Engineered Bacteria for Precise Elimination of Antibiotic Resistant Enterobactericeae",
+  "sample_title": "Microbe sample from Escherichia coli",
+  "scientific_name": "Escherichia coli",
+  "taxonomy_id": 562,
+  "data_classification": "public non-human laboratory bacterial genomic data",
+  "instrument": "NextSeq 500",
+  "library_strategy": "WGS",
+  "library_source": "GENOMIC",
+  "library_selection": "PCR",
+  "library_layout": "SINGLE",
+  "expected_read_count": 629082,
+  "ena_portal_base_count": 43152490,
+  "first_public": "2022-01-01",
+  "source_record": "https://www.ebi.ac.uk/ena/browser/view/SRR12966849",
+  "study_record": "https://www.ebi.ac.uk/ena/browser/view/PRJNA673881",
+  "usage_policy": "https://www.ebi.ac.uk/ena/browser/about/policies",
+  "usage_summary": "INSDC public records have free and unrestricted access; cite the original submission as good scientific practice.",
+  "compressed_file": {
+    "name": "SRR12966849.fastq.gz",
+    "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/049/SRR12966849/SRR12966849.fastq.gz",
+    "format": "gzip-compressed FASTQ",
+    "bytes": 23595520,
+    "md5": "c9253d16651675982d9f1908d5af8e36"
+  },
+  "local_fastq": "data/public/SRR12966849.fastq"
+}
