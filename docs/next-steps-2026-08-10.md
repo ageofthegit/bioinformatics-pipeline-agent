@@ -172,7 +172,7 @@ Stop and ask the user before:
 
 | Stage | Status | Completion evidence |
 |---|---|---|
-| Working Python baseline | Complete | Sixty tests pass; interactive workflow exists |
+| Working Python baseline | Complete | Seventy-two tests pass; interactive workflow exists |
 | 1. Learn and exercise baseline | Pending user exercise | Manual run and inspection by project owner |
 | 2. Stronger FASTQ QC | Complete | Eleven tests pass; sample demonstration produced the expanded report |
 | 3. Nextflow | Complete | Nextflow 26.04.6 real run passed; Python and Nextflow results are identical |
@@ -182,9 +182,9 @@ Stop and ask the user before:
 | 7. Evaluation | Complete | 26 deterministic checks pass; dated report records limitations |
 | 8. Public dataset | Complete | DRR002057 verified; real-data run and independent checks pass |
 | 9. Cloud/HPC-style execution | Local phase complete | Governed local queue; no external executor created |
-| 10. Provenance | Pending | Reproducible manifest and checksum verification |
-| 11. User pilot | Pending | User-owned pilot with recorded feedback |
-| 12. Application evidence | Pending | Clean repository, demo, diagram, and honest résumé entry |
+| 10. Provenance | Complete | Reproducible manifest and checksum verification |
+| 11. User pilot | In progress | First owner review recorded; two approved datasets remain |
+| 12. Application evidence | Initial release complete | Dashboard, docs, clean-clone check, and public GitHub repository |
 
 ## Stage 1: Understand the current workflow
 

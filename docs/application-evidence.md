@@ -20,10 +20,12 @@ through the same governed workflow without relying on terminal commands. Its
 limitations—including simulated queueing, offline explanations, and non-clinical
 scope—are documented alongside repeatable tests and public-data evidence.
 
-## Evidence still to collect before publication
+## Follow-up evidence after initial publication
 
 - Complete project-owner reviews of `SRR29651967` and `SRR12966849` in the dashboard.
 - Record confusion, decisions, and any resulting interface changes.
-- Re-run the full unit suite, evaluation suite, MCP check, and Nextflow equivalence check.
-- Review the public Git file list for large data, generated runs, executables, credentials, and personal information.
-- Choose a repository licence and publish only after that review.
+- Choose a reuse licence before inviting reuse or outside contributions.
+
+The initial public release followed a tracked-file review and a fresh GitHub
+clone check covering 72 Python tests, the synthetic sample workflow, dependency
+installation, and the dashboard build/render test.
